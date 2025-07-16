@@ -3,7 +3,7 @@
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+# To learn more about a Podspec see https://guides.cocoapods.org/KKProject/podspec.html
 #
 
 Pod::Spec.new do |s|
@@ -23,26 +23,14 @@ Pod::Spec.new do |s|
 Asynchronous DNS resolver for macOS and iOS written in Swift
                        DESC
 
-  s.homepage         = 'https://github.com/zhuhaow/Resolver'
+  s.homepage         = 'https://github.com/KKProject/Resolver'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.authors          = { 'zhuhaow' => 'mail@mail.com' }
-  s.source           = { :git => 'https://github.com/zhuhaow/Resolver.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/KKProject/Resolver.git', :tag => s.version.to_s }
+  s.ios.deployment_target = "15.0"
 
-  #s.platform = :osx
-  s.osx.deployment_target = "10.10"
-  s.ios.deployment_target = "9.3"
+  s.source_files = 'Sources/*'
 
-  s.source_files = 'Resolver/*'
-  s.exclude_files = "Constrictor/Constrictor/*.plist"
-
-  # s.resource_bundles = {
-  #   'NEKit' => ['NEKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'Foundation'
-  #s.osx.frameworks = 'Cocoa'
-  #s.ios.frameworks = 'UIKit'
 end
