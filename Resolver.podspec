@@ -31,6 +31,6 @@ Asynchronous DNS resolver for macOS and iOS written in Swift
   s.ios.deployment_target = "15.0"
 
   s.source_files = 'Sources/**/*'
-
+  s.module_name = 'Resolver'
   s.frameworks = 'Foundation'
 end
