@@ -30,7 +30,7 @@ Asynchronous DNS resolver for macOS and iOS written in Swift
   s.source           = { :git => 'https://github.com/KKProject/Resolver.git', :tag => s.version.to_s }
   s.ios.deployment_target = "15.0"
 
-  s.source_files = 'Sources/*'
+  s.source_files = 'Sources/**/*'
 
   s.frameworks = 'Foundation'
 end
